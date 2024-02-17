@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenovo Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.3s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            size: 30px;
+            align-items: right;
+            justify-content: left;
+            position: absolute;
+            left: 10px;
+        }
+
+        .logo {
+            max-width: 100px;
+            height: auto;
+            margin-right: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-image:hover {
+            transform: scale(1.1);
+        }
+
+        .section1 {
+            background-color: #ff4f4;
+            background-image: url('https://thehackernews.com/new-images/img/b/R29vZ2xl/AVvXsEiU4KZzypeOJBoJ8yu-1lDpqUgayjqKrmX1n54zjitMm_xPR1SUpkBC2fZkJGhieTwockSWWNN6VXvbSleKFvKSYkUyXc0XQUMtAjTOWvAUrV2Bw7be9JyX6jllNJnu3YNHe40G3jKZVufHd0yor7wfa4uvBRhUy6Ykk2jS_P0R8D36P8w0-5qJ87RG/s728-e365/lenovo.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+        }
+
+        .section1 h2 {
+            color: white;
+            margin-top: 50px;
+        }
+
+        .section2 {
+            background-color: #e0e0e0;
+        }
+
+        .section3 {
+            background-color: #cccccc;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .contact-info {
+            flex: 1;
+            max-width: 400px;
+            text-align: left;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .lenovo-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-section">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Lenovo_Global_Corporate_Logo.png/2560px-Lenovo_Global_Corporate_Logo.png" alt="Lenovo Logo">
+        </div>
+        <nav style="position: absolute; right: 50px;">
+            <a style="font-size: 22px;" href="#section1">Home</a>
+            <a style="font-size: 22px;" href="#section2">Products</a>
+            <a style="font-size: 22px;" href="#section3">Contact us</a>
+        </nav>
+    </header>
+
+    <section id="section1" class="section1">
+        <h1 style="color: white;" class="section-title">Welcome to Lenovo</h1>
+        <h4 style="color: white; font-style: italic;">"You'll wish everything was a Lenovo"</h4>
+    </section>
+
+    <section style="background-color: black;" id="section2" class="section2">
+        <h2 class="section-title">Explore Our Products</h2>
+        <br />
+        <div class="product-gallery">
+            <img class="product-image" src="https://eorders.savex.in/media/catalog/category/Lenovo_1920x500_1.png" alt="Product 1">
+            <img class="product-image" src="https://60a99bedadae98078522-a9b6cded92292ef3bace063619038eb1.ssl.cf2.rackcdn.com/images_brands_lenovo_2022_brand_page_non_Gaming.jpg" alt="Product 2">
+            <img class="product-image" src="https://www.justlaptops.co.nz/image/catalog/Justlaptops/2023/2023Q1/Thinkbook-970x250.jpg" alt="Product 3">
+            <img class="product-image" src="https://cache.tradeinn.com/images/brand-page/banner_4317.jpg" alt="Product 4">
+            <img class="product-image" src="https://i.blogs.es/cb21f9/portatiles_lenovo/1366_2000.jpg" alt="Product 5">
+        </div>
+    </section>
+
+    <section style="background-color: #333;" id="section3" class="section3">
+        <h2 class="section-title"><u>Contact Us</u></h2>
+        <div class="contact-details">
+            <div class="contact-info">
+                <p style="color: white; position: relative; right: 800px;">Have questions? Reach out to us for assistance.</p>
+                <p style="color: white; position: relative; right: 800px;">Email: Lencare@lenovo.com</p>
+                <p style="color: white; position: relative; right: 800px;">Need Help? Call: 1-800-4199-733
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const header = document.querySelector('header');
+        const logo = document.querySelector('.logo');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = '#555';
+            } else {
+                header.style.backgroundColor = '#333';
+            }
+            const scrollPosition = window.scrollY;
+            document.querySelector('.section1').style.backgroundPositionY = -scrollPosition * 0.3 + 'px';
+
+            const logoZoom = 1 + (scrollPosition / 500); 
+            logo.style.transform = `scale(${logoZoom})`;
+        });
+
+        const navLinks = document.querySelectorAll('nav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = '#ff9900'; 
+            });
+
+            link.addEventListener('mouseout', () => {
+                link.style.color = 'white'; 
+            });
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        const sections = document.querySelectorAll('section');
+
+        sections.forEach(section => {
+            section.style.opacity = 0;
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        section.style.opacity = 1; 
+                        section.style.animation = 'fadeIn 1s forwards';
+                    }
+                });
+            });
+
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>
